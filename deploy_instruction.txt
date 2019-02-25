@@ -1,0 +1,29 @@
+--node version---
+v10.14.2
+
+
+--configs-----
+backend port: 8080
+frontend port: 3000
+db server port: 27017
+db database: local
+
+
+
+--deploy instruction--
+
+Unzip the compressed file
+
+cd brainwaves
+
+yarn install
+
+DB_NAME=<db_name> COLL_NAME=<collection_name> yarn dev
+
+visit http://localhost:3000/
+
+
+-----------examples of running cmd------
+
+eg: DB_NAME=local stocks yarn dev
+eg: DB_NAME=test data yarn dev
